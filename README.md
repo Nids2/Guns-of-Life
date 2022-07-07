@@ -1,2 +1,7 @@
 # Guns-of-Life
-A game made with the godot game engine.
+A tower defense game made in Godot.
+
+# Name is not final.
+
+I'm not really sure what to call it.
+As of now it's just a prototype.
