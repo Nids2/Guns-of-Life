@@ -1,4 +1,4 @@
-# Guns-of-Life
+# Guns Of Life
 A tower defense game made in Godot.
 
 # Name is not final.
