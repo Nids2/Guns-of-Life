@@ -1,0 +1,36 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://SCRIPTS/ENTITIES/CharacterController.gd" type="Script" id=1]
+[ext_resource path="res://SPRITES/square-256.png" type="Texture" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 32, 32 )
+
+[node name="Player" type="KinematicBody2D"]
+script = ExtResource( 1 )
+
+[node name="PLACEHOLDER" type="Sprite" parent="."]
+scale = Vector2( 0.25, 0.25 )
+texture = ExtResource( 2 )
+
+[node name="InstantPoint" type="Node2D" parent="PLACEHOLDER"]
+position = Vector2( -288, 0 )
+scale = Vector2( 3, 3 )
+
+[node name="GUN1" type="ColorRect" parent="PLACEHOLDER/InstantPoint"]
+margin_left = 10.6667
+margin_right = 50.6667
+margin_bottom = 16.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="GUN2" type="ColorRect" parent="PLACEHOLDER/InstantPoint"]
+margin_left = 32.0
+margin_top = 8.0
+margin_right = 51.0
+margin_bottom = 32.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="InstantPoint2" type="Node2D" parent="PLACEHOLDER"]
+
+[node name="CollisionShape" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
